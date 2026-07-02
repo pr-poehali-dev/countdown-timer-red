@@ -74,7 +74,7 @@ const Index = () => {
   const Segment = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
       <span
-        className={`font-display font-600 leading-none tabular-nums text-[hsl(0_85%_58%)] text-6xl sm:text-8xl md:text-9xl ${
+        className={`font-digital font-700 leading-none tabular-nums text-[hsl(0_85%_58%)] text-5xl sm:text-7xl md:text-8xl ${
           finished ? '' : running ? 'animate-pulse-glow' : ''
         }`}
         style={{ textShadow: '0 0 18px hsl(0 90% 50% / 0.55), 0 0 46px hsl(0 90% 45% / 0.35)' }}
@@ -89,7 +89,7 @@ const Index = () => {
 
   const Colon = () => (
     <span
-      className="font-display text-5xl sm:text-7xl md:text-8xl text-[hsl(0_60%_40%)] leading-none self-start mt-1 sm:mt-2"
+      className="font-digital text-4xl sm:text-6xl md:text-7xl text-[hsl(0_60%_40%)] leading-none self-start mt-1 sm:mt-2"
       style={{ textShadow: '0 0 14px hsl(0 90% 50% / 0.4)' }}
     >
       :
@@ -222,7 +222,7 @@ const Index = () => {
                     min={0}
                     value={f.val}
                     onChange={(e) => f.set(e.target.value)}
-                    className="w-full text-center rounded-lg bg-zinc-900 border border-zinc-800 px-2 py-3 text-lg font-display text-[hsl(0_85%_58%)] outline-none focus:border-[hsl(0_85%_50%)] transition-colors [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none"
+                    className="w-full text-center rounded-lg bg-zinc-900 border border-zinc-800 px-2 py-3 text-lg font-digital text-[hsl(0_85%_58%)] outline-none focus:border-[hsl(0_85%_50%)] transition-colors [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none"
                   />
                   <span className="mt-2 text-[0.6rem] uppercase tracking-widest text-zinc-500 font-body">
                     {f.label}

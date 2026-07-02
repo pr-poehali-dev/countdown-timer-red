@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				display: ['Oswald', 'sans-serif'],
 				body: ['Rubik', 'sans-serif'],
+				digital: ['Orbitron', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
